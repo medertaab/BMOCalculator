@@ -1,0 +1,149 @@
+html {
+    background-color:rgb(169, 211, 212);
+}
+
+#calculator {
+    position: relative;
+    width: 350px;
+    height: 570px;
+    background-color: rgb(20, 179, 171);
+    margin: 100px auto 0px auto;
+    overflow: auto;
+    border-radius: 45px;
+    box-shadow: 0px 8px 1px 1px rgb(2, 129, 123);
+}
+
+#playcalc {
+    float:left;
+    margin: 30px 0px 0px 35px;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 20px;
+    color: rgb(1, 80, 90);
+}
+
+#sunbattery {
+    background-color: rgb(65, 46, 46);
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    float: right;
+    margin: 20px 30px 0px 0px;
+    box-shadow: inset 1px 1px 2px 2px rgb(14, 119, 102);
+}
+
+#screen {
+    position: relative;
+    width: 90%;
+    height: 100px;
+    background-color: rgb(195, 227, 231);
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 30px;
+    box-shadow: inset 0px 3px 1px 3px rgb(14, 119, 102);
+}
+
+.container {
+    display: grid;
+    gap: 7px;
+    grid-template-areas:
+        "ac ac percent divide"
+        "7 8 9 multiply"
+        "4 5 6 subtract"
+        "1 2 3 add"
+        "dot 0 equals equals";
+
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.button {
+    background-color: rgb(8, 158, 151);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.644);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.7em;
+    line-height: 60px;
+}
+
+.buttonPressed {
+    transform: translateX(1px);
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.is-depressed {
+    transform: translateX(1px);
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+#ac {
+    grid-area: ac;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgb(0, 135, 139);
+}
+
+#equals {
+    grid-area: equals;
+    justify-content: center;
+    width: 100%;
+    border-radius: 30px;
+    background-color: rgb(211, 42, 79);
+}
+
+#add {
+    background-color: rgb(240, 199, 17);
+}
+#subtract {
+    background-color: rgb(65, 211, 20);
+}
+#multiply {
+    background-color: rgb(16, 230, 230);
+}
+#divide{
+    background-color: rgb(12, 106, 184);
+}
+
+#display {
+    text-align: right;
+    font-size:60px;
+    padding: 18px 10px;
+    font-family: 'ZCOOL QingKe HuangYou';
+}
+
+#eye1 {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(13, 59, 57);
+    border-radius: 10px;
+    float:left;
+    margin: -30px 0px 0px 50px;
+}
+
+#eye2 {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(13, 59, 57);
+    border-radius: 10px;
+    float:right;
+    margin: -30px 50px 0px 0px;
+}
+
+#mouth {
+    display: block;
+    height: 15px;
+    width: 30px;
+    background-color: rgb(195, 227, 231);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 4px solid rgb(13, 59, 57);
+    border-top: 0px;
+    margin: 20px auto 0px auto;
+}
